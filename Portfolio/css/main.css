@@ -13,11 +13,6 @@
   color: rgba(15, 15, 15, 0.7);
 }
 
-.ph-contact {
-  grid-column: span 12;
-  height: 300px;
-}
-
 .ph-footer {
   grid-column: span 12;
   background: linear-gradient(130deg, #242424, #434343);
@@ -243,6 +238,11 @@ html body a {
 }
 
 .free-projects {
+  grid-column: span 12;
+  padding: 20px;
+}
+
+.future {
   grid-column: span 12;
   padding: 20px;
 }
