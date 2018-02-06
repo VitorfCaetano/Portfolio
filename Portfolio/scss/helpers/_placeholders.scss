@@ -1,0 +1,26 @@
+
+.ph-about {
+    grid-column: span 12;
+    // background: rgb(214, 214, 214);
+    height: 400px;
+   
+}
+
+.ph-projects-free {
+    grid-column: span 12;
+    // background: #f8f8f8;
+    height: 500px;
+}
+
+.ph-contact {
+    grid-column: span 12;
+    // background: #fff;
+    height: 300px;
+}
+
+.ph-footer {
+    grid-column: span 12;
+    background: linear-gradient(130deg ,#242424, #434343);
+    height: 100px;
+}
+

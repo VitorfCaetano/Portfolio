@@ -1,0 +1,83 @@
+@import "../helpers/variables";
+
+.card {
+    font-family: $cabin;
+    background: $primary-color;
+    padding: 0 30px;
+    margin: 20px auto;
+    width: 85%;
+    position: relative;
+    border-radius: 3px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 2px 2px 25px 10px rgba(46,61,73,.2);
+    
+    &:hover {
+        box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+        transition: .3s;
+    }
+    
+    .title {
+        margin: 20px 0;
+    }
+
+    .cards-img {
+        width: $responsive-width;
+        // height: 90%;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    
+}
+
+
+// Class for users who are using a mobile phone and because of it cannot 
+// get the full experience with hover
+.projects-info-m {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.935rem;
+    color: $secondary-text;
+}
+
+
+// Class for users who are using desktop and can hover on elemtns
+.projects-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+
+    div {
+        width: 100%;
+        height: 100%;
+        transform: scale(0.1);
+        transition: all ease-in-out .3s;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            font-size: 0.935rem;
+        }
+    }
+
+    &:hover{
+        opacity: 1;
+
+        div {
+            background: rgba(14, 110, 212, 0.95);
+            transform: scale(1);
+        }
+    }
+}

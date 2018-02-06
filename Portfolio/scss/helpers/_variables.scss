@@ -1,0 +1,56 @@
+
+// Colors
+
+$primary-color: rgb(255, 255, 255);
+$secondary-color: rgb(250, 251, 252);
+$primary-text: rgba(0, 0, 0, 0.87);
+$secondary-text: rgba(0, 0, 0, 0.74);
+$border-color: rgba(9, 110, 218, 0.82);
+
+// Box shadow
+
+$nav-shadow: 5px 5px 20px 0 rgba(75, 91, 105, 0.15);
+$box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+$box-shadow-hover: 2px 4px 8px 0 rgba(46,61,73,.2); 
+
+// Fonts
+
+$cabin: 'Cabin', sans-serif;
+
+// Breakpoints
+
+$breakpoints: (
+  'small': (min-width: 600px),
+  'medium': (min-width: 900px),
+  'large': (min-width: 1200px),
+  'huge': (min-width: 1800px),
+);
+
+// Margin and Padding
+
+$base-space: 5px;
+$margin-center: 0 auto;
+
+
+// Height and Width
+
+$responsive-width: 100%;
+$responsive-height: 100%;
+
+// Positions
+
+$relative: relative;
+$absolute: absolute;
+
+
+
+//Nav
+
+$nav-height: 64px;
+$height-inherited: 100%;
+
+
+
+
+
+
