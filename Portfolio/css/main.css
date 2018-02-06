@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import url("https://fonts.googleapis.com/css?family=Cabin");
-.ph-about {
-  grid-column: span 12;
-  height: 400px;
+.pj-header {
+  text-align: center;
+  padding: 10px;
 }
 
-.ph-projects-free {
-  grid-column: span 12;
-  height: 500px;
+.pj-header h1 {
+  margin-bottom: 10px;
+}
+
+.pj-header p {
+  color: rgba(0, 0, 0, 0.74);
 }
 
 .ph-contact {
@@ -54,6 +57,7 @@ html body .grid > *:nth-child(even) {
 
 html body h1 {
   font-size: 1.5rem;
+  font-family: "Cabin", sans-serif;
 }
 
 html body ul li {

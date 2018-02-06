@@ -1,15 +1,16 @@
+@import "../helpers/variables";
 
-.ph-about {
-    grid-column: span 12;
-    // background: rgb(214, 214, 214);
-    height: 400px;
-   
-}
+.pj-header {
+    text-align: center;
+    padding: 10px;
 
-.ph-projects-free {
-    grid-column: span 12;
-    // background: #f8f8f8;
-    height: 500px;
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: $secondary-text;
+    }
 }
 
 .ph-contact {
