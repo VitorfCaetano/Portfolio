@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
 
-    box-shadow: 2px 2px 25px 10px rgba(46,61,73,.2);
+    box-shadow: $box-shadow;
     
     &:hover {
         box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
