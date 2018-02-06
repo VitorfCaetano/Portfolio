@@ -238,6 +238,11 @@ html body a {
   padding: 20px;
 }
 
+.free-projects {
+  grid-column: span 12;
+  padding: 20px;
+}
+
 .img, object {
   max-width: 90%;
   max-height: 90%;
