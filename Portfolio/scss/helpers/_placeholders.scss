@@ -1,5 +1,10 @@
 @import "../helpers/variables";
 
+
+.title {
+    padding: 20px 0;
+}
+
 .pj-header {
     text-align: center;
     padding: 10px;
@@ -11,11 +16,5 @@
     p {
         color: $secondary-text;
     }
-}
-
-.ph-footer {
-    grid-column: span 12;
-    background: linear-gradient(130deg ,#242424, #434343);
-    height: 100px;
 }
 

@@ -3,4 +3,23 @@
 .future {
     grid-column: span 12; 
     padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    i {
+        color: #000;
+        margin: 10px 0 10px 0;
+    }
+    
+
+    .description {
+        color: $secondary-text;
+        font-size: 0.9375rem;
+        padding-bottom: 10px;
+    }
 }
