@@ -88,6 +88,7 @@ html body a {
 .header .navbar .logo {
   height: 100%;
   margin-right: auto;
+  padding: 5px;
 }
 
 .header .navbar .logo a {
@@ -262,7 +263,53 @@ html body a {
 
 .footer {
   grid-column: span 12;
-  background: linear-gradient(130deg, #242424, #434343);
+  background: linear-gradient(45deg, #242424, #3b3b3b);
+  text-align: center;
+  color: white;
+}
+
+.footer .ft-title {
+  padding: 20px 0;
+}
+
+.footer .socials {
+  padding: 24px 0;
+}
+
+.footer .socials .icons {
+  margin-bottom: 20px;
+}
+
+.footer .socials .icons li {
+  margin: 0 5px;
+}
+
+.footer .socials .icons li a {
+  color: white;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+}
+
+.footer .socials .icons li a .aling {
+  line-height: 43px;
+  font-size: 1.2rem;
+}
+
+.footer .socials .icons li a:hover {
+  background: white;
+  box-shadow: inset 0 0 0 1px #333;
+}
+
+.footer .socials .icons li a:hover .aling {
+  color: rgba(9, 110, 218, 0.82);
+}
+
+.footer .author {
+  margin-bottom: 10px;
 }
 
 .img, object {
