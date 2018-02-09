@@ -20,10 +20,14 @@
     }
 
     .description {
-        max-width: 1140px;
+        max-width: 1120px;
         width: $responsive-width - 10%;
         margin: 40px auto;
         line-height: 1.4rem;
         font-size: 0.9375rem;
+
+        @include respond-to('large'){
+            font-size: 1rem;
+        }
     }
 }

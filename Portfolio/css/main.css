@@ -5,8 +5,20 @@
 }
 
 @media (min-width: 650px) {
+  .title {
+    flex: 1 1 100%;
+  }
   .title h2 {
     font-size: 2.5vw;
+  }
+}
+
+@media (min-width: 900px) {
+  .title {
+    flex: 1 1 100%;
+  }
+  .title h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -19,6 +31,12 @@
 @media (min-width: 650px) {
   .pj-header {
     flex-basis: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .pj-header {
+    padding: 20px 80px;
   }
 }
 
@@ -51,7 +69,7 @@ html {
 }
 
 html body {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   color: rgba(0, 0, 0, 0.87);
   letter-spacing: 0.05rem;
   word-spacing: 0.06rem;
@@ -92,6 +110,7 @@ html body a {
 
 .header .navbar {
   margin: 0 auto;
+  max-width: 1260px;
   width: 90%;
   height: 100%;
   display: flex;
@@ -198,13 +217,14 @@ html body a {
 }
 
 .intro-image .sentence {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   position: absolute;
   top: 12.5%;
   right: 10%;
   bottom: 12.5%;
   left: 10%;
-  width: 80%;
+  max-width: 1260px;
+  margin: 0 auto;
   height: 300px;
   display: flex;
   align-items: center;
@@ -237,11 +257,17 @@ html body a {
 }
 
 .about .description {
-  max-width: 1140px;
+  max-width: 1120px;
   width: 90%;
   margin: 40px auto;
   line-height: 1.4rem;
   font-size: 0.9375rem;
+}
+
+@media (min-width: 1200px) {
+  .about .description {
+    font-size: 1rem;
+  }
 }
 
 .odin-projects {
@@ -249,8 +275,13 @@ html body a {
   padding: 20px 30px;
 }
 
+.odin-projects .odin-wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
 @media (min-width: 650px) {
-  .odin-projects {
+  .odin-projects .odin-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -262,8 +293,13 @@ html body a {
   padding: 20px 30px;
 }
 
+.free-projects .codeCamp-wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
 @media (min-width: 650px) {
-  .free-projects {
+  .free-projects .codeCamp-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -273,18 +309,34 @@ html body a {
 .future {
   grid-column: span 12;
   padding: 20px 30px;
+}
+
+.future .future-wrapper {
+  max-width: 1260px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
 
-.future .icon {
-  color: black;
-  margin: 10px 0 10px 0;
+@media (min-width: 900px) {
+  .future .future-wrapper .block {
+    flex-basis: 32%;
+    margin: 5px;
+  }
+  .future .future-wrapper .icon.code {
+    height: 75px;
+    line-height: 75px;
+  }
 }
 
-.future .description {
+.future .future-wrapper .icon {
+  color: black;
+  margin: 10px 0 20px 0;
+}
+
+.future .future-wrapper .description {
   color: rgba(15, 15, 15, 0.7);
   font-size: 0.9375rem;
   padding-bottom: 10px;
@@ -298,7 +350,7 @@ html body a {
 }
 
 .footer .ft-title {
-  padding: 20px 0;
+  padding: 30px 0 10px 0;
 }
 
 .footer .socials {
@@ -339,6 +391,7 @@ html body a {
 
 .footer .author {
   margin-bottom: 10px;
+  font-size: 0.875rem;
 }
 
 .img, object {
@@ -353,8 +406,26 @@ html body a {
 }
 
 @media (min-width: 650px) {
-  .card-wrapper {
+  .card-wrapper.odin {
+    flex-basis: 42%;
+  }
+  .card-wrapper.code-camp {
     flex-basis: 32%;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-wrapper.odin {
+    flex-basis: 40%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-wrapper.odin {
+    flex-basis: 24%;
+  }
+  .card-wrapper.code-camp {
+    flex-basis: 30%;
   }
 }
 

@@ -4,22 +4,39 @@
     grid-column: span 12; 
     padding: 20px 30px;
 
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    .icon {
-        color: $black;
-        margin: 10px 0 10px 0;
-    }
     
 
-    .description {
-        color: $secondary-text;
-        font-size: 0.9375rem;
-        padding-bottom: 10px;
-    }
+    .future-wrapper {
+        max-width: 1260px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+
+        @include respond-to ('medium'){
+            .block {
+                flex-basis: 32%;
+                margin: 5px;
+            }
+    
+            .icon.code {
+                height: 75px;
+                line-height: 75px;
+            }
+        }
+
+        .icon {
+            color: $black;
+            margin: 10px 0 20px 0;
+        }
+        
+    
+        .description {
+            color: $secondary-text;
+            font-size: 0.9375rem;
+            padding-bottom: 10px;
+        }
+    } 
 }

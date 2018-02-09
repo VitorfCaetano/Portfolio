@@ -12,6 +12,7 @@
 
     .navbar {
         margin: $margin-center;
+        max-width: 1260px;
         width: $responsive-width - 10%;
         height: $height-inherited;
         display: flex;

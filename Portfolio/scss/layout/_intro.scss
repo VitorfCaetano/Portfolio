@@ -33,14 +33,15 @@
       
 
     .sentence {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
         position: absolute;
         top: 12.5%;
         right: 10%;
         bottom: 12.5%;
         left: 10%;
       
-        width: $responsive-width - 20%;
+        max-width: 1260px;
+        margin: 0 auto;
         height: 300px;
 
         display: flex;

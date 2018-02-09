@@ -4,12 +4,16 @@
 .free-projects {
     grid-column: span 12; 
     padding: 20px 30px;
-    
 
-    @include respond-to('small') {
-        display: flex;
-        flex-wrap: wrap;
-        // align-items: center;
-        justify-content: center;
+    .codeCamp-wrapper {
+        max-width: 1260px;
+        margin: 0 auto;
+
+        @include respond-to('small') {
+            display: flex;
+            flex-wrap: wrap;
+            // align-items: center;
+            justify-content: center;
+        }
     }
 }

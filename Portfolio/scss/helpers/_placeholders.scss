@@ -5,8 +5,18 @@
     padding: 20px 0;  
 
     @include respond-to('small'){
+        flex: 1 1 100%;
+
         h2 {
             font-size: 2.5vw;
+        } 
+    }
+
+    @include respond-to('medium'){
+        flex: 1 1 100%;
+
+        h2 {
+            font-size: 1.5rem;
         } 
     }
      
@@ -19,6 +29,10 @@
 
     @include respond-to('small'){
         flex-basis: 90%;
+    }
+
+    @include respond-to('large'){
+        padding: 20px 80px;
     }
 
 
