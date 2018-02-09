@@ -1,11 +1,28 @@
 @import "../helpers/variables";
 
+
+.card-wrapper {
+    width: 85%;
+    margin: 0 auto;
+
+    @include respond-to('small') {
+        // max-width: 460px;
+        flex-basis: 32%;
+    }
+
+    // @include respond-to('medium') {
+    //     // max-width: 460px;
+    //     flex-basis: 32%;
+    // }
+}
+
+
 .card {
     font-family: $cabin;
     background: $primary-color;
-    padding: 0 30px;
+    padding: 0 20px;
     margin: 20px auto;
-    width: 85%;
+    width: 100%;
     position: relative;
     border-radius: 3px;
 
@@ -15,6 +32,11 @@
     justify-content: center;
 
     box-shadow: $box-shadow;
+
+    // @include respond-to('small') {
+    //     width: 33%;
+
+    //   }
     
     &:hover {
         box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);

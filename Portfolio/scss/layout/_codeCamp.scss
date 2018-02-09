@@ -1,7 +1,15 @@
 @import "../helpers/variables";
+@import "../helpers/mixins";
 
 .free-projects {
     grid-column: span 12; 
-    padding: 20px;
+    padding: 20px 30px;
     
+
+    @include respond-to('small') {
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+        justify-content: center;
+    }
 }

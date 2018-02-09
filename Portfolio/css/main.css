@@ -4,9 +4,22 @@
   padding: 20px 0;
 }
 
+@media (min-width: 650px) {
+  .title h2 {
+    font-size: 2.5vw;
+  }
+}
+
 .pj-header {
   text-align: center;
   padding: 10px;
+  display: block;
+}
+
+@media (min-width: 650px) {
+  .pj-header {
+    flex-basis: 90%;
+  }
 }
 
 .pj-header h1 {
@@ -233,17 +246,33 @@ html body a {
 
 .odin-projects {
   grid-column: span 12;
-  padding: 20px;
+  padding: 20px 30px;
+}
+
+@media (min-width: 650px) {
+  .odin-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .free-projects {
   grid-column: span 12;
-  padding: 20px;
+  padding: 20px 30px;
+}
+
+@media (min-width: 650px) {
+  .free-projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .future {
   grid-column: span 12;
-  padding: 20px;
+  padding: 20px 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -318,12 +347,23 @@ html body a {
   object-fit: cover;
 }
 
+.card-wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (min-width: 650px) {
+  .card-wrapper {
+    flex-basis: 32%;
+  }
+}
+
 .card {
   font-family: "Cabin", sans-serif;
   background: white;
-  padding: 0 30px;
+  padding: 0 20px;
   margin: 20px auto;
-  width: 85%;
+  width: 100%;
   position: relative;
   border-radius: 3px;
   display: flex;
