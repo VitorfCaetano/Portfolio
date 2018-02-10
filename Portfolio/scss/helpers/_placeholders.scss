@@ -32,6 +32,10 @@
 
     @include respond-to('large'){
         padding: 20px 80px;
+
+        h1 {
+            font-size: 1.8rem;
+        }
     }
 
 

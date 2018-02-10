@@ -36,6 +36,9 @@
   .pj-header {
     padding: 20px 80px;
   }
+  .pj-header h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .pj-header h1 {
@@ -276,12 +279,19 @@ html body a {
 .odin-projects .odin-wrapper {
   max-width: 1260px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 650px) {
   .odin-projects .odin-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1200px) {
+  .odin-projects .odin-wrapper {
     justify-content: space-between;
   }
 }
@@ -294,12 +304,13 @@ html body a {
 .free-projects .codeCamp-wrapper {
   max-width: 1260px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 650px) {
   .free-projects .codeCamp-wrapper {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
