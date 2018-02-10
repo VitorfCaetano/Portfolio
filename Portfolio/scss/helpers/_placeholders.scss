@@ -13,8 +13,6 @@
     }
 
     @include respond-to('medium'){
-        flex: 1 1 100%;
-
         h2 {
             font-size: 1.5rem;
         } 
@@ -26,6 +24,7 @@
     text-align: center;
     padding: 10px;
     display: block;
+    margin: 0 auto;
 
     @include respond-to('small'){
         flex-basis: 90%;

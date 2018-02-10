@@ -3,7 +3,7 @@
 
 .card-wrapper {
     width: 85%;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     @include respond-to('small') {
         &.odin {
