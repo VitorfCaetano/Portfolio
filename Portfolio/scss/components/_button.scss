@@ -1,0 +1,22 @@
+@import "../helpers/variables";
+
+#scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    background: none;
+    
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid $border-color;
+    cursor: pointer;
+
+    i {
+        color: $border-color;
+        line-height: 38px;
+        font-size: 1.2rem;
+    }
+}
