@@ -1,10 +1,12 @@
 @import "../helpers/variables";
 
+// Scroll to top button
 #scroll-top {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 5px;
     z-index: 100;
+    margin-top: 5px;
     background: none;
     
     width: 40px;

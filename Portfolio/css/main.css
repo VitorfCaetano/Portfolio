@@ -433,13 +433,6 @@ html body a {
   margin-bottom: 30px;
 }
 
-.projects-info-m {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 0.935rem;
-  color: rgba(15, 15, 15, 0.7);
-}
-
 .projects-info {
   position: absolute;
   width: 100%;
@@ -452,9 +445,12 @@ html body a {
   height: 100%;
   transform: scale(0.1);
   transition: all ease-in-out .3s;
+  padding: 30px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .projects-info .hv-interaction .info {
@@ -462,6 +458,31 @@ html body a {
   color: #fff;
   padding: 0 20px;
   font-size: 0.935rem;
+}
+
+@media (min-width: 650px) {
+  .projects-info .hv-interaction .info {
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects-info .hv-interaction .info {
+    font-size: 0.935rem;
+  }
+}
+
+.projects-info .hv-interaction .project-link {
+  width: 90px;
+  height: 42px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.projects-info .hv-interaction .project-link span {
+  line-height: 40px;
+  color: #fff;
 }
 
 .projects-info:hover {
@@ -511,9 +532,10 @@ html body a {
 
 #scroll-top {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 10px;
+  right: 5px;
   z-index: 100;
+  margin-top: 5px;
   background: none;
   width: 40px;
   height: 40px;
