@@ -1,11 +1,11 @@
 @import "../helpers/variables";
 
 .footer {
-    grid-column: span 12;
+    grid-column: $full-grid;
     background: linear-gradient(45deg ,#242424, #3b3b3b);
 
-    text-align: center;
-    color: rgb(255, 255, 255);
+    text-align: $center-align;
+    color: $white;
 
     .ft-title {
         padding: 30px 0 10px 0;
@@ -13,6 +13,6 @@
     
     .author {
         margin-bottom: 10px;
-        font-size: 0.875rem;
+        font-size: $fourteen;
     }
 }

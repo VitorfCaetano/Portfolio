@@ -4,17 +4,17 @@ html {
     font-size: 100%;
 
     body {
-        font-size: 0.9375rem;
+        font-size: $fifteen;
         color: $primary-text;
         letter-spacing: 0.05rem;
         word-spacing: 0.06rem; 
 
         .grid > *:nth-child(even) {
-            background-color: #f8f8f8;
+            background-color: $secondary-color;
         }
 
         h1 {
-            font-size: 1.5rem;
+            font-size: $twenty-four;
             font-family: $cabin;
         }
 

@@ -1,5 +1,11 @@
 @import "../helpers/variables";
 
+%flex-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .card-wrapper {
     width: 85%;
@@ -37,13 +43,11 @@
     background: $primary-color;
     padding: 0 20px;
     margin: 20px auto;
-    width: 100%;
+    width: $responsive-width;
     position: relative;
     border-radius: 3px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %flex-display;
     justify-content: center;
 
     box-shadow: $box-shadow;
@@ -55,7 +59,6 @@
 
     .cards-img {
         width: $responsive-width;
-        // height: 90%;
         display: block;
         margin-bottom: 30px;
     }    
@@ -68,7 +71,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    
 
     .hv-interaction {
         width: 100%;
@@ -77,24 +79,22 @@
         transition: all ease-in-out .3s;
         padding: 30px 0;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        @extend %flex-display;
         flex-wrap: wrap;
+        justify-content: space-around;
 
         .info {
-            text-align: center;
-            color: #fff;
+            text-align: $center-align;
+            color: $white;
             padding: 0 20px;
-            font-size: 0.935rem;
+            font-size: $fifteen;
 
             @include respond-to('small'){
-                font-size: 0.875rem; 
+                font-size: $fourteen; 
             }
 
             @include respond-to('medium'){
-                font-size: 0.935rem;
+                font-size: $fifteen;
             }
         }
 
@@ -102,17 +102,13 @@
             width: 90px;
             height: 42px;
             text-align: center;
-            border: 2px solid #fff;
+            border: 2px solid $white;
             border-radius: 2px;
             
-
             span {
                 line-height: 40px;
-                color: #fff;
+                color: $white;
             }
-
-            
-
         }
     }
 
@@ -120,7 +116,7 @@
         opacity: 1;
 
         .hv-interaction {
-            background: rgba(14, 110, 212, 0.95);
+            background: $blue;
             transform: scale(1);
         }
     }

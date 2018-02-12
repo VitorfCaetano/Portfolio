@@ -14,17 +14,17 @@
 
     @include respond-to('medium'){
         h2 {
-            font-size: 1.5rem;
+            font-size: $twenty-four;
         } 
     }
      
 }
 
 .pj-header {
-    text-align: center;
+    text-align: $center-align;
     padding: 10px;
     display: block;
-    margin: 0 auto;
+    margin: $center;
 
     @include respond-to('small'){
         flex-basis: 90%;
@@ -34,7 +34,7 @@
         padding: 20px 80px;
 
         h1 {
-            font-size: 1.8rem;
+            font-size: $twenty-nine;
         }
     }
 
@@ -46,4 +46,17 @@
     p {
         color: $secondary-text;
     }
+}
+
+%grid-pattern {
+    grid-column: $full-grid; 
+    padding: 20px 30px;
+}
+
+%wrapper {
+    max-width: 1260px;
+    margin: $center;
+
+    display: flex;
+    flex-wrap: wrap;
 }

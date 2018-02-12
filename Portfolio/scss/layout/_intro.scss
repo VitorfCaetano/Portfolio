@@ -1,7 +1,7 @@
 @import "../helpers/variables";
 
 .intro-image {
-    grid-column: span 12;
+    grid-column: $full-grid;
     background: url("../images/blurred-img.jpg") 0 30% no-repeat;
     background-size: 100% 1300px; 
     width: $responsive-width;
@@ -28,11 +28,11 @@
       
         to {
           opacity: 1;
-        }
-      }
+        } 
+    }
       
     .sentence {
-        font-size: 1.75rem;
+        font-size: $twenty-eight;
         position: absolute;
         top: 12.5%;
         right: 10%;
@@ -40,7 +40,7 @@
         left: 10%;
       
         max-width: 1260px;
-        margin: 0 auto;
+        margin: $center;
         height: 300px;
 
         display: flex;
@@ -48,8 +48,8 @@
         justify-content: center;
 
         span {
-            text-align: center;
-            color: rgba(0, 0, 0, 1);
+            text-align: $center-align;
+            color: $black;
 
             animation: fadeIn 1.5s;
         }

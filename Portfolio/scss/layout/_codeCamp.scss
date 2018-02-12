@@ -1,16 +1,10 @@
 @import "../helpers/variables";
-@import "../helpers/mixins";
 
 .free-projects {
-    grid-column: span 12; 
-    padding: 20px 30px;
+    @extend %grid-pattern;
 
     .codeCamp-wrapper {
-        max-width: 1260px;
-        margin: 0 auto;
-
-        display: flex;
-        flex-wrap: wrap;
+        @extend %wrapper;
         justify-content: center;
 
         @include respond-to('small') {
