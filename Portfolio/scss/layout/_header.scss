@@ -8,5 +8,11 @@
     background: $primary-color;
     top: 0;
 
+    transition: opacity .35s ease-in-out;
+
     box-shadow: $nav-shadow;
 }
+
+.fade-out {
+    opacity: 0;
+  }
