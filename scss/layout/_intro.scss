@@ -1,0 +1,31 @@
+.introduction {
+  height: 330px;
+
+  .intro {
+    width: 80%;
+    margin: 0 auto;
+
+    .line-one {
+      display: block;
+    }
+
+    .presentation {
+      margin: 30px auto;
+      line-height: 24px;
+      max-width: 715px;
+
+      @include respond-to ('small') {
+        font-size: 1.05rem;
+      }
+
+    }
+  }
+
+  @include respond-to ('medium') {
+    height: 350px;
+  }
+
+  @include respond-to ('small') {
+    height: 300px;
+  }
+}

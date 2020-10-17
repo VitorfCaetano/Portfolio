@@ -1,0 +1,29 @@
+@import "../helpers/_variables";
+
+html {
+  font-size: 100%;
+
+  body {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.06rem;
+    text-align: center;
+
+    h1 {
+      font-size: 2.2rem;
+    }
+
+
+    ul li {
+      display: inline-block;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1200px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import "../helpers/variables";
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+
+.background {
+  background-image: url("../images/background-gray.svg");
+
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include respond-to ('medium') {
+    height: 190px;
+  }
+
+  @include respond-to ('medium') {
+    height: 130px;
+  }
+}

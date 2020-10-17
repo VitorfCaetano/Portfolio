@@ -1,0 +1,18 @@
+@import "../helpers/variables";
+
+.footer {
+  background: linear-gradient(130deg, #507CE8, #7191FF);
+  height: 290px;
+  color: #fff;
+
+  .logo-white {
+    width: 50px;
+    height: auto;
+  }
+
+  .author {
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+  }
+}

@@ -1,0 +1,36 @@
+.socials {
+  margin-top: 20px;
+  padding: 24px 0;
+
+  .icons {
+    margin-bottom: 20px;
+
+    li {
+      margin: 0 5px;
+
+      a {
+        color: #fff;
+        text-align: center;
+        display: block;
+        height: 48px;
+        width: 48px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        transition: all 0.2s ease-out;
+
+        .aling {
+          line-height: 45px;
+          font-size: 1.2rem;
+        }
+
+        &:hover {
+          background: #fff;
+
+          .aling {
+            color: #507CE8;
+          }
+        }
+      }
+    }
+  }
+}
